@@ -1,11 +1,15 @@
 .aboutWrapper {
-  @apply flex flex-col h-full items-center;
+  @apply flex flex-col items-center;
 }
 
 .aboutWrapper h1 {
-  @apply text-3xl font-bold text-center py-20 w-full text-primary;
+  @apply text-7xl font-bold text-center py-20 w-full text-primary self-start my-20;
 }
 
 .aboutWrapper p {
   @apply text-center text-lg text-accent;
+}
+
+.paragraphs {
+  @apply my-20;
 }
