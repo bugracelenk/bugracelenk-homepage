@@ -1,0 +1,7 @@
+.layoutWrapper {
+  @apply flex flex-col h-[100vh] w-full bg-primary-dark relative;
+}
+
+.layout {
+  @apply w-full max-w-[1200px] mx-auto h-full relative;
+}

@@ -1,0 +1,19 @@
+.hero {
+  @apply flex flex-col justify-center items-center h-[90%] w-full gap-10;
+}
+
+.animation {
+  @apply animate-typing overflow-hidden w-full whitespace-nowrap tracking-[0.3rem] text-accent font-bold  border-r-2;
+}
+
+.heroLarge {
+  @apply text-3xl animation;
+}
+
+.heroSmall {
+  @apply text-base animation;
+}
+
+.hero span {
+  @apply text-primary;
+}

@@ -1,0 +1,41 @@
+.nav {
+  @apply sticky top-0 flex items-center justify-between flex-wrap bg-transparent py-4 w-full;
+}
+
+.logo {
+  @apply text-accent text-sm tracking-tight relative transition-all duration-500 ease-in-out cursor-pointer;
+}
+
+.logo:hover,
+.navLinks li:hover {
+  @apply text-primary;
+}
+
+.logo::after,
+.logo::before {
+  @apply transition-all duration-500 ease-in-out;
+}
+
+.logo:hover:after,
+.navLinks li:hover:after {
+  content: '';
+  @apply animate-widen absolute h-[2px] bg-primary bottom-[-0.25rem] right-0 rounded-br-lg rounded-tr-lg;
+}
+
+.logo:hover:before,
+.navLinks li:hover:before {
+  content: '';
+  @apply animate-widen absolute h-[2px] bg-primary bottom-[-0.25rem] left-0 rounded-bl-lg rounded-tl-lg;
+}
+
+.navLinks {
+  @apply flex items-center flex-wrap gap-4;
+}
+
+.navLinks li {
+  @apply text-accent text-sm tracking-tight relative transition-all duration-500 ease-in-out cursor-pointer;
+}
+
+.navLinks li[data-active='true'] {
+  @apply text-primary;
+}
